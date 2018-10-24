@@ -14,12 +14,16 @@ public class DuracaoMinutos {
 	public void caculo() {
 	
 		if (minutosTermino > minutosInicio) 
-			this.duracaoMinutos.totalMinutos = minutosTermino - minutosInicio;
+			this.duracaoMinutos.totalMinutos = totalDeMinutos();
 		else {
 			this.duracaoMinutos.totalMinutos = 60 - minutosInicio + minutosTermino;
 			if (this.duracaoMinutos.totalMinutos == 60) //caso especial
 				this.duracaoMinutos.totalMinutos = 0;
 		}
+	}
+
+	private int totalDeMinutos() {
+		return totalDeMinutos();
 	}
 
 }
